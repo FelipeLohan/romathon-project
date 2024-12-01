@@ -168,13 +168,14 @@ header{
   justify-content: center;
 }
 
-.cta-container button{
+.cta-container a{
   width: 30%;
   background-color: #5938CB;
   border-radius: 6px;
   padding: 16px 20px;
   color: #F4D7FF;
   border: none;
+  text-align: center;
 }
 
 /* FOOTER */
@@ -207,6 +208,10 @@ header{
   .func-container{
     grid-template-columns:1fr;
   }
+
+  .logo-container{
+    width: 8%
+  }
 }
 
 @media(max-width: 600px){
@@ -229,15 +234,16 @@ header{
     box-sizing: border-box;
     text-align: center;
   }
-  .cta-container button{
+  .cta-container a{
     font-size: 3vmin;
     padding: 16px 25%;
+    background-color: #6d29ff;
     text-align: center;
     text-align: center;
     
   }
 
-  .cta-container{
-    border: 1px solid black;
+  .logo-container{
+    width: 15%
   }
 }
