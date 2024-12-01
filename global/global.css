@@ -4,6 +4,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Lato", sans-serif;
+  font-weight: 700;
   background-color: #03000A;
 
 }
@@ -29,6 +30,5 @@ img {
 
 a{
   text-decoration: none;
-  color: var(--cor-secundaria-claro);
 }
 
