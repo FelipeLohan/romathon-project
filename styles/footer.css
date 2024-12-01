@@ -1,0 +1,13 @@
+.footer-container{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  gap: 20px 40px;
+  background-color: rgb(8, 0, 19);
+  margin-top: 40px;
+}
+
+.footer-container img{
+  width: 4%;
+  cursor: pointer;
+}

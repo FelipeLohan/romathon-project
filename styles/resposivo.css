@@ -1,0 +1,9 @@
+
+@media screen and (max-width: 1366px) {
+  .func-content p {
+    font-size: 0.75rem;
+  }
+  .func-content summary {
+    margin-bottom: 10px;
+  }
+}
