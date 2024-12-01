@@ -6,10 +6,26 @@ header{
 
 
 .logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
   width: 4%;
   margin: 0 auto;
   padding: 30px;
   margin-bottom: 20px;
+  color: #fff;
+  font-size: 3vmin;
+}
+
+.logo-container p:hover{
+  color: #c0a3ff;
+  transition: 0.3s;
+}
+
+.logo-container img{
+  color: #c0a3ff;
+  transition: 0.3s;
 }
 
 .header-container{
@@ -49,6 +65,11 @@ header{
   margin-bottom: 80px;
 }
 
+.header-container a:hover{
+  background-color: #6d29ff;
+  transition: 0.3s;
+}
+
 /* MAIN */
 
 .main-title{
@@ -56,7 +77,7 @@ header{
   box-sizing: content-box;
   text-align: center;
   color: #fff;
-  font-size: 4.5vmin;
+  font-size: 4vmin;
 }
 
 .func-container {
@@ -69,27 +90,26 @@ header{
 .func-box {
   background: #4B378D;
   width: 100%;
-  height: 25vh;
+  height: 100%;
   border-radius: 12px;
 }
 .func-content {
-  padding: 20px 0 10px 25px;
+  padding: 15px 0 10px 25px;
 }
-.func-content summary {
+.func-content span {
   position: relative;
-  font-size: 1.5rem;
-  color: black;
+  font-weight: 800;
+  font-size: 4.5vmin;
+  color: rgb(244, 220, 255);
   list-style: none;
-  background: #D9D9D9;
   width: max-content;
-  padding: 9px;
   border-radius: 30px;
-  margin-bottom: 17px;
 }
 
 .func-content p {
-  color: white;
-  margin: 1vh;
+  color: rgb(243, 197, 255);
+  margin: 1vh 1vh 0 1vh;
+  font-size: 3.5vmin;
 }
 
 /* Formulário */
@@ -98,11 +118,12 @@ header{
   color: white;
   text-align: center;
   margin: 40px;
-  font-size: 3.5vmin;
+  font-size: 4.5vmin;
 }
 
 .chamada-container span{
   color: #c0a3ff;;
+  text-decoration: underline;
 }
 
 .form-container{
@@ -135,6 +156,7 @@ header{
   border-radius: 6px;
   border: none;
   font-size: 2.5vmin;
+  outline: none;
 }
 
 .input-container input::placeholder{
@@ -171,13 +193,51 @@ header{
   cursor: pointer;
 }
 
+.footer-container img:hover{
+
+}
+
 /* Responsividade */
 
 @media screen and (max-width: 1366px) {
   .func-content p {
     font-size: 0.75rem;
   }
-  .func-content summary {
-    margin-bottom: 10px;
+
+  .func-container{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width: 600px){
+  .header-container{
+    width: 80%;
+  }
+  .func-container{
+    width: 80%;
+  }
+
+  .footer-container img{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .cta-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .cta-container button{
+    font-size: 3vmin;
+    padding: 16px 25%;
+    text-align: center;
+    text-align: center;
+    
+  }
+
+  .cta-container{
+    border: 1px solid black;
   }
 }
